@@ -82,3 +82,35 @@ module.exports = {
 
 ![This is an image](http://www.webentorn.com/github_image.png)
 
+
+
+## Files creation 
+
+Creation of index.js and BasePattern.js. 
+Creation of index.html into public path.
+
+## Implementation of local server
+
+We used Webpack Dev Server to this.
+```npm install webpack-dev-server --save-dev```
+
+## Modification of Scripts into package.json
+
+Added this line into file package.json instead the default line
+
+```
+"scripts": {
+  "start": "webpack-cli serve --open --mode development",
+  "build": "webpack --mode production",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+
+```
+
+## Build and Start
+We used build command to create /dist path.
+```npm run build```
+
+Then run start:
+
+```npm run start```
