@@ -80,5 +80,5 @@ module.exports = {
 
 ## Project Structure
 
-![This is an image](http://www.webentorn.com/2022-10-10 21_18_02-â README.md - mango - Visual Studio Code.png)
+![This is an image](http://www.webentorn.com/github_image.png)
 
