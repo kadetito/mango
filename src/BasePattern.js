@@ -1,10 +1,12 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRouters from "./routes/AppRouters";
 
 const BasePattern = () => {
   return (
-    <div>
-      <h1> Hola Mundo! </h1>
-    </div>
+    <BrowserRouter>
+      <AppRouters />
+    </BrowserRouter>
   );
 };
 
