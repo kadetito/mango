@@ -46,11 +46,15 @@ Webpack is a tool for compile all JavaScript files into a single package that we
 And now let's write a file in the root path called webpack.config.js which will contain the recommended configuration. The HTML templates to use, the rules module, the valid extensions and the support file names will be indicated.
 
 ```
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   resolve: {
     extensions: [".js", ".jsx"],
@@ -65,6 +69,20 @@ module.exports = {
         },
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: "url-loader",
+        },
+      },
+      {
         test: /\.html$/,
         use: [
           {
@@ -74,13 +92,17 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./public/index.html",
+      template: "./index.html",
       filename: "./index.html",
     }),
   ],
 };
+
 ```
 
 ## Project Structure
