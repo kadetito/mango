@@ -1,5 +1,6 @@
 # Mango Challenge
 
+![This is an image](http://www.webentorn.com/mango.png)
 
 ## Start Project
 ```yarn install```
