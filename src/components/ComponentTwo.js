@@ -17,12 +17,7 @@ const ComponentTwo = () => {
         </div>
         <div className="row mt-5">
           <div className="col-12 minim__alcada">
-            <CustomRange
-              default={100}
-              onChange={(values) => {
-                setSize(values[0]);
-              }}
-            />
+            <CustomRange editable={false} defaultvals={[1.99, 70.99]} />
           </div>
         </div>
       </div>

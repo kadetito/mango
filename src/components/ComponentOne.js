@@ -15,14 +15,10 @@ const ComponentOne = () => {
             <Button onClick={() => navigate("/")}> &lt; Back </Button>
           </div>
         </div>
+
         <div className="row mt-5">
           <div className="col-12 minim__alcada">
-            <CustomRange
-              default={100}
-              onChange={(values) => {
-                setSize(values[0]);
-              }}
-            />
+            <CustomRange editable={true} defaultvals={[1, 100]} />
           </div>
         </div>
       </div>
