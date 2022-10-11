@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import BasicLayout from "../layouts/BasicLayout";
@@ -6,7 +6,7 @@ import CustomRange from "./CustomRange";
 
 const ComponentTwo = () => {
   const navigate = useNavigate();
-  const [size, setSize] = useState(100);
+
   return (
     <BasicLayout>
       <div className="container">
@@ -17,7 +17,7 @@ const ComponentTwo = () => {
         </div>
         <div className="row mt-5">
           <div className="col-12 minim__alcada">
-            <CustomRange editable={false} defaultvals={[1.99, 70.99]} />
+            <CustomRange editable={false} />
           </div>
         </div>
       </div>

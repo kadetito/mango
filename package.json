@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/kadetito/mango#readme",
   "dependencies": {
-
     "classnames": "^2.3.2",
+    "multi-range-slider-react": "^2.0.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",

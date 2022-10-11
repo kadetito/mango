@@ -1,5 +1,10 @@
 # Mango Challenge
 
+
+## Start Project
+```yarn install```
+```npm run start```
+
 ## Project creation without CLI 
 
 Used npm init -y to create package.json with default config
