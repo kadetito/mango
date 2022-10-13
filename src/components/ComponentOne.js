@@ -9,7 +9,7 @@ const ComponentOne = () => {
 
   return (
     <BasicLayout>
-      <div className="container">
+      <div className="container" data-testid="componentone">
         <div className="row mt-2">
           <div className="col-12">
             <Button onClick={() => navigate("/")}> &lt; Back </Button>
